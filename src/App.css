@@ -3,9 +3,12 @@ body{
 }
 .container {
   padding: 10px;
-  
+  display: flex;
+  flex-direction: row;  
 }
 label {
   margin:0px 10px;
 }
+
+
 

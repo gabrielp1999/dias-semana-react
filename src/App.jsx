@@ -72,7 +72,7 @@ const data = {
 function App() {
   document.title = 'Dias semana React'
   const [valueLanguage, setLanguage] = useState('pt');
-  const [valueDaysWeek, setValueDaysWeek] = useState('')
+  const [valueDaysWeek, setValueDaysWeek] = useState('sunday');
 
   const changeLanguage = e =>{
     if(e.target.value === 'portugues'){

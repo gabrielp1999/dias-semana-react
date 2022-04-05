@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dias-semana-react/static/css/main.72513f4a.css",
-    "main.js": "/dias-semana-react/static/js/main.862f75e1.js",
+    "main.js": "/dias-semana-react/static/js/main.8b58713b.js",
     "static/js/787.5e2a1324.chunk.js": "/dias-semana-react/static/js/787.5e2a1324.chunk.js",
     "index.html": "/dias-semana-react/index.html",
     "main.72513f4a.css.map": "/dias-semana-react/static/css/main.72513f4a.css.map",
-    "main.862f75e1.js.map": "/dias-semana-react/static/js/main.862f75e1.js.map",
+    "main.8b58713b.js.map": "/dias-semana-react/static/js/main.8b58713b.js.map",
     "787.5e2a1324.chunk.js.map": "/dias-semana-react/static/js/787.5e2a1324.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72513f4a.css",
-    "static/js/main.862f75e1.js"
+    "static/js/main.8b58713b.js"
   ]
 }

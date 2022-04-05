@@ -1,14 +1,53 @@
+* {
+  margin: 2px;
+}
+
 body{
   background-color: gainsboro;
 }
 .container {
   padding: 10px;
   display: flex;
-  flex-direction: row;  
+  flex-direction: column;  
 }
-label {
-  margin:0px 10px;
+.description{
+  margin: 0 5px;
+  width: 400px;
+  box-shadow: 10px 5px 5px black;
+  font-size: 13px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(240, 120, 80, 0.1);
+}
+.App{
+  display: flex;
+  padding: 5px;
+}
+select {
+  height: 22px;
 }
 
+@media screen and (max-width:450px){
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+    text-align: center;
+  }
 
+  .App{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
 
+  .description{
+    margin: 0 5px;
+    max-width: 320px;
+    border: 1px solid black;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+  }
+
+}

@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Card(props) {
-  const [tittle, setTittle] = useState('')
-  const [menssege,setMenssege] = useState('');
 
-  
   let options = undefined;
 
   if(props.valueLanguage === 'pt'){
-    options = props.data.pt;
+    options = props.data.pt[props.valueDaysWeek];
   }
   else {
-    options = props.data.eng;
+    options = props.data.eng[props.valueDaysWeek];
   }
-  console.log(options[props.valueDaysWeek])
+
+  if(options === undefined){
+    return null;
+  }
 
   return(
-    <div>
-      <label>{props.valueLanguage === 'pt' ? "Descrição" : "Description"}</label>
+    <div className="description">
+      {/* <label>{props.valueLanguage === 'pt' ? "Descrição" : "Description"}</label> */}
+      <h3>{options.title}</h3>
+      <p>{options.description}</p>
     </div>
   )
 }

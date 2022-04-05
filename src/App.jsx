@@ -96,13 +96,13 @@ function App() {
           valueLanguage={valueLanguage}
           daysWeek={daysWeek}
         />
+      </div>
         <Card 
           valueLanguage={valueLanguage}
           daysWeek={daysWeek}
           data={data}
           valueDaysWeek={valueDaysWeek}
         />
-      </div>
     </div>
   );
 }

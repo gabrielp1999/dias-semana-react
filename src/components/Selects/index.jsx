@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Select(props) {
 
   return(
     <> 
-      <label>{props.valueLanguage === 'pt' ? "Idioma" : "Language"}</label>
+      <h3>{props.valueLanguage === 'pt' ? "Idioma" : "Language"}</h3>
       <select onChange={props.changeLanguage} name="select">
         <option value="portugues">Portugues</option>
         <option value="ingles">Ingles</option>
       </select>
 
     <div>
-      <label>{props.valueLanguage === 'pt' ? "Dias da semana" : "Days of the week" }</label>
+      <h3>{props.valueLanguage === 'pt' ? "Dias da semana" : "Days of the week" }</h3>
       <select onChange={props.daysWeek} name="select">
         <option value="sunday">{props.valueLanguage === 'pt' ? "Domingo" : "Sunday" }</option>
         <option value="monday">{props.valueLanguage === 'pt' ? "Segunda" : "Monday" }</option>

@@ -10,31 +10,19 @@ function Select(props) {
         <option value="ingles">Ingles</option>
       </select>
 
-    <div style={{ display: props.valueLanguage === 'pt' ? "block" : "none" }}>
-      <label>Dias da semana</label>
+    <div>
+      <label>{props.valueLanguage === 'pt' ? "Dias da semana" : "Days of the week" }</label>
       <select onChange={props.daysWeek} name="select">
-        <option value="domingo">Domingo</option>
-        <option value="segunda">Segunda</option>
-        <option value="terca">Terça</option>
-        <option value="quarta">Quarta</option>
-        <option value="quinta">Quinta</option>
-        <option value="sexta">Sexta</option>
-        <option value="sabado">Sabado</option>
+        <option value="sunday">{props.valueLanguage === 'pt' ? "Domingo" : "Sunday" }</option>
+        <option value="monday">{props.valueLanguage === 'pt' ? "Segunda" : "Monday" }</option>
+        <option value="tuesday">{props.valueLanguage === 'pt' ? "Terça" : "Tuesday" }</option>
+        <option value="wednesday">{props.valueLanguage === 'pt' ? "Quarta" : "Wednesday" }</option>
+        <option value="thursday">{props.valueLanguage === 'pt' ? "Quinta" : "Thursday" }</option>
+        <option value="friday">{props.valueLanguage === 'pt' ? "Sexta" : "Friday" }</option>
+        <option value="saturday">{props.valueLanguage === 'pt' ? "Sabado" : "Saturday" }</option>
       </select>
     </div>
 
-    <div style={{ display: props.valueLanguage === 'en' ? "block" : "none" }}> 
-          <label>Days of the week</label>
-          <select onChange={props.daysWeek} name="select">
-              <option value="domingo">Sunday</option>
-              <option value="segunda">Monday</option>
-              <option value="terca">Tuesday</option>
-              <option value="quarta">Wednesday</option>
-              <option value="quinta">Thursday</option>
-              <option value="sexta">Friday</option>
-              <option value="sabado">Saturday</option>
-          </select>
-        </div>
     </>
   )
 }

@@ -3,7 +3,7 @@ import './App.css';
 import Selects from './components/Selects';
 import Card from './components/Card';
 
-const data = [{
+const data = {
   pt: {
     sunday: {
       title:"Domingo",
@@ -67,7 +67,7 @@ const data = [{
     },
 
   },
-}];
+};
 
 function App() {
   document.title = 'Dias semana React'
